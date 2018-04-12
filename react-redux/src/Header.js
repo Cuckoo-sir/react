@@ -26,7 +26,7 @@ class Header extends Component {
     //     this.setState({ themeColor: state.themeColor })
     // }
 
-    static PropTypes = {
+    static propTypes = {
         themeColor: PropTypes.string
     }
 
