@@ -13,9 +13,9 @@ class ThemeSwitch extends Component {
     }
 
     componentWillMount () {
-        const { store } = this.context
+        // const { store } = this.context
         this._updateThemeColor()
-        store.subscribe(() => this._updateThemeColor())
+        // store.subscribe(() => this._updateThemeColor())
     }
 
     _updateThemeColor () {
@@ -40,7 +40,7 @@ class ThemeSwitch extends Component {
                     onClick={this.handleSwitchColor(this, 'red')}>>Red</button>
                 <button 
                     style={{ color: this.state.themeColor }}
-                    onClick={this.handleSwitchColor(this, 'red')}>Blue</button>
+                    onClick={this.handleSwitchColor(this, 'Blue')}>Blue</button>
             </div>
         )
     }
