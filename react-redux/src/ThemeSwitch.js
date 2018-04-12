@@ -25,7 +25,6 @@ class ThemeSwitch extends Component {
     }
 
     handleSwitchColor (color) {
-        console.log(color)
         const { store } = this.context
         store.dispatch({
             type:'CHANGE_COLOR',
